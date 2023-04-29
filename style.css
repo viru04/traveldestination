@@ -17,14 +17,14 @@
    display: flex;
    flex-direction: column;
    gap: 20px;
-   padding-top: 100px;
+   padding-top: 60px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .down-part {
@@ -238,23 +238,30 @@ path.two {
 }
 .nav-bar{
     background-color: rgb(0, 0, 0);
-    height: 100px;
+    height: 60px;
     position: fixed;
     top: 0%;
     width: 100%;
   }
   ul{
     list-style: none;
+    align-items: right;
     text-align: justify;
-    padding-top: 30px;
+    padding-top: 8px;
     padding-inline: 30px;
    }
    li{
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(233, 225, 225);
     display: inline;
     padding-inline: 20px;
+    padding-top: 40px;
    }
+  .hover-li:hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.5);
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
 
 /* SVG animations */
 
@@ -290,6 +297,7 @@ path.two {
     gap: 20px;
     height: 100vh;
     width: 30%;
+    padding-top: 100px;
     }
 
     .right {
@@ -299,6 +307,7 @@ path.two {
     margin: 20px;
     flex-direction: column;
     gap: 40px;
+    padding-top: 100px;
     }
     .cta {
         display: flex;
@@ -321,7 +330,14 @@ path.two {
         background-repeat: none;
         background-size: 100%;
     }
-    ul{
+    .nav-bar{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    }
+     ul{
         list-style: none;
         text-align: right;
         padding-top: 30px;
@@ -333,4 +349,5 @@ path.two {
         display: inline;
         padding-inline: 20px;
        }
+    
 }
