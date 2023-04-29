@@ -258,7 +258,11 @@
                 flex-direction: row;
                 height: 120vh;
             }
-
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
             .left {
             display: flex;
             flex-direction: column;
@@ -275,11 +279,6 @@
             margin: 20px;
             flex-direction: column;
             gap: 40px;
-            }
-            .wrapper {
-                display: flex;
-                justify-content: center;
-                gap: 5px;
             }
             .cta {
                 display: flex;
