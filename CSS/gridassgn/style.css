@@ -1,1 +1,296 @@
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgb(208, 214, 220);
+            background-image: url(back.jpg);
+        }
+
+        .right {
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+ 
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .down-part {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .part {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+            background-color: rgb(240, 240, 240);
+
+        }
+
+        .lpart {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 30%;
+            border: none;
+        }
+
+        #box-1 {
+            flex-basis: 40%;
+            background-color: aliceblue;
+        }
+
+        #box-2 {
+            flex-basis: 40%;
+
+        }
+
+        #box-3 {
+            flex-basis: 20%;
+        }
+
+        .img {
+
+            background-color: bisque;
+            height: 200px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .limg {
+            flex-basis: 60%;
+            background-color: antiquewhite;
+        }
+
+        .lpart #box-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .boxes1 {
+            flex-basis: 20%;
+            border: solid black;
+            border-width: thin;
+            border-bottom: none;
+            background-color: azure;
+        }
+        .boxes{
+            flex-basis: 20%;
+            border: solid black;
+            border-width: thin;
+            border-bottom: none;
+            background-color: azure;
+        }
+
+        .boxes:hover {
+            transition: 0.5s ease-in;
+            transform: scale(1.1);
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        }
+        .tags:hover{
+            transition: 0.5s ease-in;
+            transform: scale(1.5);
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        }
+
+
+        p {
+            border: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(34, 50, 64);
+        }
+
+        button {
+            height: 50px;
+        }
+
+        .main-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #box-3 {
+            border: solid black;
+            border-width: thin;
+        }
+
+        .top {
+            border-bottom: solid black;
+            border-width: thin;
+            margin: 5px;
+        }
+
+        .tags {
+            display: flex;
+            background-color: rgb(238, 235, 231);
+            margin: 5px;
+        }
+
+        .tag_part {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 10px;
+        }
+
+        .button {
+            border-radius: 2px;
+            margin: 5px 5px;
+            background-color: black;
+            color: rgb(0, 0, 0);
+            font-size: small;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cta {
+            display: flex;
+            padding: 10px 45px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 8px;
+            color: rgb(237, 237, 237);
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(0, 0, 0);
+            transition: 1s;
+            box-shadow: 6px 6px 0 black;
+            transform: skewX(-15deg);
+        }
+
+        .cta:focus {
+            outline: none;
+        }
+
+        .cta:hover {
+            transition: 0.5s;
+            box-shadow: 10px 10px 0 #FBC638;
+        }
+
+        .cta span:nth-child(2) {
+            transition: 0.5s;
+            margin-right: 0px;
+        }
+
+        .cta:hover span:nth-child(2) {
+            transition: 0.5s;
+            margin-right: 45px;
+        }
+
+        span {
+            transform: skewX(15deg)
+        }
+
+        span:nth-child(2) {
+            width: 10px;
+            margin-left: 30px;
+            position: relative;
+            top: 12%;
+        }
+
+        /**************SVG****************/
+
+        path.one {
+            transition: 0.4s;
+            transform: translateX(-60%);
+        }
+
+        path.two {
+            transition: 0.5s;
+            transform: translateX(-30%);
+        }
+
+        .cta:hover path.three {
+            animation: color_anim 1s infinite 0.2s;
+        }
+
+        .cta:hover path.one {
+            transform: translateX(0%);
+            animation: color_anim 1s infinite 0.6s;
+        }
+
+        .cta:hover path.two {
+            transform: translateX(0%);
+            animation: color_anim 1s infinite 0.4s;
+        }
+
+        /* SVG animations */
+
+        @keyframes color_anim {
+            0% {
+                fill: white;
+            }
+
+            50% {
+                fill: #FBC638;
+            }
+
+            100% {
+                fill: white;
+            }
+        }
+
+        @media screen and (min-width:641px) {
+            .main {
+                display: flex;
+                flex-direction: row;
+                height: 120vh;
+            }
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
+            .left {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            gap: 20px;
+            height: 100vh;
+            width: 30%;
+            }
+
+            .right {
+            height: 70vh;
+            width: 70%;
+            display: flex;
+            margin: 20px;
+            flex-direction: column;
+            gap: 40px;
+            }
+            .cta {
+                display: flex;
+                padding: 10px 45px;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                color: rgb(237, 237, 237);
+                font-family: Arial, Helvetica, sans-serif;
+                background: rgb(0, 0, 0);
+                transition: 1s;
+                box-shadow: 6px 6px 0 black;
+                transform: skewX(-15deg);
+            }
+        }

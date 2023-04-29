@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY RESUME</title>
+    <script src="https://kit.fontawesome.com/b4bd1eb4c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .main{
+        width: 100%;
+        padding-left: 200px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .left-part
+      {
+        flex-basis: 100%;
+        box-shadow: 4px 4px 4px 4px #ccc;
+        
+      }
+      .right-part{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-left: 30px;
+        box-shadow: 4px 4px 4px 4px #ccc; 
+      }
+      .image{
+        width: 100%;
+        height: 270px;
+        position: relative;
+      }
+      .main-img{
+        width: 100%;
+        height: 100%;
+        
+      }
+      ul{
+        margin-block: 20px;
+      }
+      li{
+        margin-block: 8px;
+      }
+      .username{
+         position: absolute;
+         top: 240px;
+         color: black;
+
+      }
+      .contact ul{
+        list-style: none;
+      }
+      .icon-text{
+        display: flex;
+        gap: 10px;
+      }
+      i{
+        color: teal;
+      }
+      .progress-bar{
+          background-color: rgb(208, 206, 206);
+          border-radius: 20px;
+      }
+      .progress-bar .progress{
+        background-color: teal;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+      }
+      .contain{
+        display: flex;
+        column-gap: 10px;
+      }
+      .Skills li{
+           list-style: none;
+      }
+      .Languages li{
+          list-style: none;
+      }
+      .Workexp{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 50%;
+        box-shadow: 4px 4px 4px 4px #ccc;
+        padding: 20px; 
+      }
+      .Education{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 50%;
+        box-shadow: 4px 4px 4px 4px #ccc; 
+        padding: 20px; 
+      }
+      p{
+        border: none;
+      }
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #888;
+      }
+      h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #888;
+      }
+      h4{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #888;
+      }
+      h3{
+       
+        font-family: Arial, Helvetica, sans-serif;
+        color: #888;
+      
+      }
+      .subtext{
+        color: rgb(52, 51, 51);
+      }
+
+      @media  screen and (min-width:641px) {
+        .main{
+          width: 70%;
+          flex-direction: row;
+        }
+        .left-part{
+          flex-basis: 35%;
+        }
+        .right-part{
+          flex-basis: 65%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-part">
+            <div class="image">
+                <img class="main-img" src="" alt="Users image">
+                <h2 class="username">Viraj Takone</h2>
+            </div>
+                <div class="contact">
+                <ul>
+                    <li class="icon-text">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <h3>Designer</h3>
+                    </li>
+                    <li class="icon-text">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <h3>London ,UK</h3>
+                    </li>
+                    <li class="icon-text">
+                        <i class="fa-regular fa-envelope"></i> 
+                        <h3>ex@email.com</h3>
+                    </li>
+                    <li class="icon-text">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>1234567890</h3>
+                    </li>
+                 </ul>
+                </div>
+            <section class="Skills">
+              <div class="contain">
+                <i class="fa-solid fa-asterisk"></i>
+                  <h3>Skills</h3>
+              </div>
+              
+                  <ul>
+                      <li>
+                        <p style="border: 0px;"> Abode Photoshop</p>
+                        <div class="progress-bar">
+                            <div style=width:90%; class="progress">
+                                <h3>90%</h3>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <p style="border: 0px;"> Abode Photoshop</p>
+                        <div class="progress-bar">
+                            <div style=width:90%; class="progress">
+                                <h3>90%</h3>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <p style="border: 0px;"> Abode Photoshop</p>
+                        <div class="progress-bar">
+                            <div style=width:90%; class="progress">
+                                <h3>90%</h3>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <p style="border: 0px;"> Abode Photoshop</p>
+                        <div class="progress-bar">
+                            <div style=width:90%; class="progress">
+                                <h3>90%</h3>
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+            </section>
+            <section class="Languages">
+              <div class="contain">
+                <i class="fa-solid fa-earth-asia"></i>
+                  <h3>Languages</h3>
+              </div>
+              <ul>
+                  <li>
+                    <p style="border: 0px;"> English</p>
+                    <div class="progress-bar">
+                        <div style=width:100%; class="progress">
+                            <h3>100%</h3>
+                        </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p style="border: 0px;"> Spanish</p>
+                    <div class="progress-bar">
+                        <div style=width:50%; class="progress">
+                            <h3>50%</h3>
+                        </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p style="border: 0px;"> German</p>
+                    <div class="progress-bar">
+                        <div style=width:25%; class="progress">
+                            <h3>25%</h3>
+                        </div>
+                    </div>
+                  </li>
+                   
+              </ul>
+            </section>
+            
+        </div>
+        <div class="right-part">
+              <div class="Workexp">
+                <div class="icon-text">
+                  <i class="fa-solid fa-suitcase"> </i> 
+                 <h3 > WorkExperience</h3>    
+                </div>
+                
+                <article>
+                  <h4>FrontEnd Developer</h4>
+                  <div class="icon-text">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>April 4 2020- Current</h3>
+                  </div>
+                 <p   class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nam eligendi dicta aperiam ipsam nihil alias officia! Natus nostrum est modi dolor, nobis minima. Vel, quidem sequi! Est, commodi quibusdam!</p>
+                 </article>
+                 <hr>
+                 <article>
+                  <h4>FrontEnd Developer</h4>
+                  <div class="icon-text">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>April 4 2020- Current</h3>
+                  </div>
+                 <p  class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nam eligendi dicta aperiam ipsam nihil alias officia! Natus nostrum est modi dolor, nobis minima. Vel, quidem sequi! Est, commodi quibusdam!</p>
+                 </article>
+                 <hr>
+                 <article>
+                  <h4>FrontEnd Developer</h4>
+                  <div class="icon-text">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>April 4 2020- Current</h3>
+                  </div>
+                 <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nam eligendi dicta aperiam ipsam nihil alias officia! Natus nostrum est modi dolor, nobis minima. Vel, quidem sequi! Est, commodi quibusdam!</p>
+                 </article>
+                 <hr>
+              </div>
+              <div class="Education">
+                 <div class="icon-text">
+                  <i class="fa-solid fa-school"></i>
+                <h3>Education</h3>
+                 </div>
+
+                 <article>
+                  <h4>FrontEnd Developer</h4>
+                  <div class="icon-text">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>April 4 2020- Current</h3>
+                  </div>
+                 <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nam eligendi dicta aperiam ipsam nihil alias officia! Natus nostrum est modi dolor, nobis minima. Vel, quidem sequi! Est, commodi quibusdam!</p>
+                 </article>
+                 <hr>
+                 <article>
+                  <h4>FrontEnd Developer</h4>
+                  <div class="icon-text">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>April 4 2020- Current</h3>
+                  </div>
+                 <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nam eligendi dicta aperiam ipsam nihil alias officia! Natus nostrum est modi dolor, nobis minima. Vel, quidem sequi! Est, commodi quibusdam!</p>
+                 </article>
+                 <hr>
+                 <article>
+                  <h4>FrontEnd Developer</h4>
+                  <div class="icon-text">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>April 4 2020- Current</h3>
+                  </div>
+                 <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nam eligendi dicta aperiam ipsam nihil alias officia! Natus nostrum est modi dolor, nobis minima. Vel, quidem sequi! Est, commodi quibusdam!</p>
+                 </article>
+                 <hr>
+                
+              </div>
+        </div>
+    </div>
+    
+
+    </div>
+</body>
+</html>

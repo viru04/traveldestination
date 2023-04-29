@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4bd1eb4c7.js" crossorigin="anonymous"></script>
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .main{
+          display: flex;
+          flex-direction: column;
+       }
+       nav{
+         background-color: rgb(110, 46, 46);
+         height: 100px;
+         position: fixed;
+         top: 0%;
+         width: 100%;
+       }
+       .text{
+        display: flex;
+        flex-direction: column;
+        margin-inline: 750px;
+        margin-top: 400px;
+        margin-bottom: 400px;
+        
+       }
+       ul{
+        list-style: none;
+        text-align: right;
+        padding-top: 30px;
+        padding-inline: 30px;
+       }
+       li{
+        font-size: 32px;
+        color: rgb(233, 225, 225);
+        display: inline;
+        padding-inline: 20px;
+       }
+       .welcome{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(74, 70, 69);
+        height: 80vh;
+        width: 100vw;
+       }
+       .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(122, 122, 202);
+        height: 80vh;
+        width: 100vw;
+       }
+       .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(74, 70, 69);
+        height: 80vh;
+        width: 100vw;
+       }
+       .heading{
+        margin: 40px;
+       }
+       .about-me-text{
+        color: rgb(208, 204, 204);
+        margin-top: 200px;
+        
+       }
+    
+       .profiles{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 20px;
+       }
+       i{
+        color: rgb(208, 204, 204);
+        size: 20px;
+       }
+       .facebook,.github,.linkedin,.email,.call{
+        color: rgb(208, 204, 204); 
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="welcome">
+              <div class="text">
+                <div class="intro">
+                    <h1>Hey Iam Viraj</h1>
+                  </div>  
+                  <div class="sub">
+                    <h3>An CP Enthusiast</h3>
+                  </div>
+              </div>  
+        </div>
+        <div class="projects">
+             <div class="heading">
+                <h2><u>These are some of My projects</u></h2>
+             </div>
+        </div>
+        <div class="about-me">
+                <div class="about-me-text">
+                    <h1>Let's Work Together</h1>
+                    <h3>How do You Take Your Coffee</h3>
+                </div>
+                <div class="profiles">
+                    <div class="facebook" style="display: flex; flex-direction: row; gap: 5px;">
+                        <i class="fa-brands fa-facebook"></i>
+                       <h4>Facebook</h4>
+                    </div>
+                    <div class="github" style="display: flex; flex-direction: row; gap: 5px;">
+                        <i class="fa-brands fa-github"></i>
+                    <h4>Github</h4>
+                    </div>
+                    <div class="linkedin" style="display: flex; flex-direction: row; gap: 5px;">
+                        <i class="fa-brands fa-linkedin"></i>
+                      <h4>Linkedin</h4>
+                    </div>
+                    <div class="email" style="display: flex; flex-direction: row; gap: 5px;">
+                        <i class="fa-solid fa-envelope"></i>
+                       <h4>Email me</h4>
+                    </div>
+                    <div class="call" style="display: flex; flex-direction: row; gap: 5px;">
+                        <i class="fa-solid fa-phone"></i>
+                    <h4>Call me</h4>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
